@@ -1,0 +1,21 @@
+{
+  "name": "fs-plus-remote",
+  "version": "0.0.1",
+  "description": "node's fs-plus with support for remote using ssh/ftp",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/mscdex/ssh2/raw/master/LICENSE"
+    }
+  ],
+  "repository": "https://github.com/rajendrant/fs-plus-remote",
+  "main": "./lib/fs-plus-remote.coffee",
+  "dependencies": {
+    "ssh2": "^0.3",
+    "fs-plus": "^2.3",
+    "deasync": "^0.0.7"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
