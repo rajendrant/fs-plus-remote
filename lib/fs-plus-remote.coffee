@@ -86,7 +86,6 @@ module.exports =
     until stats
       deasync.sleep 100
     stats
-    true
 
   statSyncNoException: (path) ->
     local_fs.statSyncNoException path if not sftp_conn
@@ -100,13 +99,13 @@ module.exports =
 
   isDirectorySync: (path) ->
     local_fs.isDirectorySync path if not sftp_conn
-    stats = statSyncNoException path
+    stats = @statSyncNoException path
     false if not stats
     stats.isDirectory()
 
   existsSync: (path) ->
     local_fs.existsSync path if not sftp_conn
-    stats = statSyncNoException path
+    stats = @statSyncNoException path
     not not stats
 
   copySync: (path, newPath) ->
