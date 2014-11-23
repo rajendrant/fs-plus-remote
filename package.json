@@ -1,6 +1,6 @@
 {
   "name": "fs-plus-remote",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "node's fs-plus with support for remote using ssh/ftp",
   "licenses": [
     {
